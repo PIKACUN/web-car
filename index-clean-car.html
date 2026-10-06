@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080f">
+<title>Nexo Studio — Websites that work as hard as you do</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="progress"></div>
+<div class="glow" id="glow"></div>
+<div id="cursor"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d6bff"/><stop offset="1" stop-color="#ff5b6e"/></linearGradient>
+  <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5cf2c2"/><stop offset="1" stop-color="#4d6bff"/></linearGradient>
+  <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5b6e"/><stop offset="1" stop-color="#ffb45b"/></linearGradient>
+</defs></svg>
+
+<nav>
+  <a class="logo" href="#">nexo<i>.</i></a>
+  <div class="nav-right">
+    <button class="pill" id="lang" type="button">EN</button>
+    <button class="pill" id="theme" type="button" aria-label="Toggle theme">◐</button>
+    <button class="pill" id="menuBtn" type="button">Menu</button>
+  </div>
+</nav>
+
+<div class="menu" id="menu">
+  <a href="#work">Selected work</a>
+  <a href="#services">Services</a>
+  <a href="#playground">Playground</a>
+  <a href="#process">Process</a>
+  <a href="#about">About</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Start a project</a>
+</div>
+
+<main>
+  <!-- Hero -->
+  <header class="hero">
+    <div>
+      <h1>
+        <span class="l"><span>Websites</span></span>
+        <span class="l"><span>built layer</span></span>
+        <span class="l"><span class="grad">by layer.</span></span>
+      </h1>
+      <p data-i="hero">From wireframe to live site, Nexo Studio designs and builds fast websites and web systems for UMKM and growing businesses.</p>
+      <div class="cta">
+        <a class="btn main" href="#contact" data-i="cta1">Start a project</a>
+        <a class="btn" href="#work" data-i="cta2">See our work</a>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="hero3d" aria-label="Interactive 3D stack: wireframe, design, code and live website layers"></canvas>
+      <span class="tag"><i></i>Live</span>
+      <span class="tag"><i></i>Code</span>
+      <span class="tag"><i></i>Wireframe</span>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div><span>Landing pages</span><span>Company profiles</span><span>E-commerce</span><span>Web apps</span><span>UI / UX</span><span>Care plans</span></div>
+    <div><span>Landing pages</span><span>Company profiles</span><span>E-commerce</span><span>Web apps</span><span>UI / UX</span><span>Care plans</span></div>
+  </div>
+
+  <!-- Selected work -->
+  <section id="work" class="rv">
+    <div class="head"><h2>Selected<br>work</h2><span class="label">Recent builds</span></div>
+    <div class="work-grid">
+      <a class="work" href="#contact">
+        <div class="mock"><div class="screen"><b></b><u></u><u style="width:48%"></u><em></em></div></div>
+        <div class="info"><strong>North Commerce</strong><span class="label">E-commerce ↗</span></div>
+      </a>
+      <a class="work" href="#contact">
+        <div class="mock"><div class="screen" style="transform:perspective(900px) rotateX(5deg) rotateY(14deg)"><b></b><em style="background:linear-gradient(135deg,var(--mint),var(--blue))"></em></div></div>
+        <div class="info"><strong>Form Systems</strong><span class="label">Web app ↗</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="pin">
+    <div class="pin-sticky">
+      <div class="head"><h2>What we<br>build.</h2></div>
+      <div class="services" id="track">
+        <article class="service"><span class="ic">1</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><rect class="pn" x="30" y="12" width="200" height="126" rx="12"/><circle cx="44" cy="25" r="3" fill="#ff5b6e"/><circle cx="54" cy="25" r="3" fill="#ffb45b"/><circle cx="64" cy="25" r="3" fill="#5cf2c2"/></g><g class="d2"><rect class="ln" x="46" y="46" width="96" height="9" rx="4.5"/><rect class="ln" x="46" y="62" width="68" height="7" rx="3.5"/><rect class="ln" x="46" y="112" width="140" height="6" rx="3"/><rect class="ln" x="46" y="123" width="90" height="6" rx="3"/><rect class="fb press" x="46" y="82" width="56" height="18" rx="9" fill="url(#gA)"/></g><g class="d3"><rect class="fb bob" x="156" y="44" width="58" height="48" rx="9" fill="url(#gB)"/><g transform="translate(74 91)"><g class="cur"><path d="M0 0v15l4-4 3 7 3-1.4-3-7h6z" fill="#fff" stroke="#0b0d1a" stroke-width="1"/></g></g></g></svg></div><div><h3>Landing<br>pages</h3><p>Focused pages built to explain, convert and feel like your brand.</p></div></article>
+        <article class="service"><span class="ic">2</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><rect class="pn" x="72" y="14" width="116" height="122" rx="14"/></g><g class="d2"><circle cx="130" cy="48" r="17" fill="url(#gA)"/><rect class="ln" x="102" y="76" width="56" height="8" rx="4"/><rect class="ln" x="88" y="92" width="84" height="6" rx="3"/><rect class="ln" x="100" y="104" width="60" height="6" rx="3"/><g class="fb pop"><circle cx="144" cy="60" r="8" fill="#5cf2c2"/><path class="st" style="stroke:#07080f;stroke-opacity:1;stroke-width:1.8" d="M140.5 60l2.5 2.5 4.5-5"/></g></g><g class="d3"><g class="bob"><rect class="pn" x="14" y="36" width="52" height="20" rx="10"/><circle cx="26" cy="46" r="4" fill="#4d6bff"/><rect class="ln" x="35" y="43.5" width="22" height="5" rx="2.5"/></g><g class="bob2"><rect class="pn" x="194" y="86" width="52" height="20" rx="10"/><circle cx="206" cy="96" r="4" fill="#ff5b6e"/><rect class="ln" x="215" y="93.5" width="22" height="5" rx="2.5"/></g></g></svg></div><div><h3>Company<br>profiles</h3><p>A credible online identity for businesses that want to look established.</p></div></article>
+        <article class="service"><span class="ic">3</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><rect class="pn" x="24" y="16" width="100" height="118" rx="12"/></g><g class="d2"><circle class="fb pulse" cx="74" cy="58" r="26" fill="#efe3a8"/><rect class="ln" x="40" y="98" width="68" height="8" rx="4"/><rect class="ln" x="40" y="112" width="38" height="6" rx="3"/></g><g class="d3"><path class="st" style="stroke-opacity:.5;stroke-width:3" d="M150 50h14l10 40h40l8-30h-54"/><circle cx="180" cy="104" r="5" fill="var(--fg)" fill-opacity=".5"/><circle cx="206" cy="104" r="5" fill="var(--fg)" fill-opacity=".5"/><circle class="fb drop" cx="188" cy="56" r="10" fill="#efe3a8"/><g class="fb swing"><rect x="196" y="12" width="46" height="22" rx="7" fill="url(#gC)"/><circle cx="205" cy="23" r="2.5" fill="var(--bg)"/></g></g></svg></div><div><h3>E-commerce</h3><p>Online stores designed around an easy path from product to payment.</p></div></article>
+        <article class="service"><span class="ic">4</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><rect class="pn" x="20" y="12" width="220" height="126" rx="12"/></g><g class="d2"><rect class="ln" x="32" y="28" width="22" height="6" rx="3"/><rect class="ln" x="32" y="42" width="22" height="6" rx="3"/><rect class="ln" x="32" y="56" width="22" height="6" rx="3"/><path class="st draw" pathLength="1" style="stroke:#5cf2c2;stroke-opacity:1;stroke-width:2.5" d="M74 50L94 40L114 45L134 30L154 36"/><rect class="grow" style="--i:0" x="72" y="90" width="14" height="36" rx="3" fill="url(#gA)"/><rect class="grow" style="--i:1" x="92" y="68" width="14" height="58" rx="3" fill="url(#gA)"/><rect class="grow" style="--i:2" x="112" y="80" width="14" height="46" rx="3" fill="url(#gA)"/><rect class="grow" style="--i:3" x="132" y="50" width="14" height="76" rx="3" fill="url(#gA)"/><rect class="grow" style="--i:4" x="152" y="72" width="14" height="54" rx="3" fill="url(#gA)"/></g><g class="d3"><circle class="st" cx="198" cy="52" r="18" style="stroke-width:7;stroke-opacity:.14"/><circle class="fb ring" cx="198" cy="52" r="18" fill="none" stroke="url(#gC)" stroke-width="7" stroke-linecap="round" pathLength="100" style="rotate:-90deg"/><rect class="ln" x="180" y="84" width="40" height="6" rx="3"/><rect class="ln" x="180" y="96" width="26" height="6" rx="3"/></g></svg></div><div><h3>Web apps</h3><p>Custom systems and dashboards built around how your team works.</p></div></article>
+        <article class="service"><span class="ic">5</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><rect class="pn" x="20" y="10" width="220" height="130" rx="12" style="stroke-dasharray:4 4"/></g><g class="d2"><path class="st" d="M44 112L84 28M200 96L160 28"/><path class="draw" pathLength="1" fill="none" stroke="url(#gA)" stroke-width="3.5" stroke-linecap="round" d="M44 112C84 28 160 28 200 96"/><rect x="39" y="107" width="10" height="10" rx="2" fill="var(--bg)" stroke="var(--fg)" stroke-opacity=".5"/><rect x="195" y="91" width="10" height="10" rx="2" fill="var(--bg)" stroke="var(--fg)" stroke-opacity=".5"/><circle class="fb pulse" cx="84" cy="28" r="5" fill="#ff5b6e"/><circle class="fb pulse" style="animation-delay:-1.5s" cx="160" cy="28" r="5" fill="#ff5b6e"/><circle class="runner" r="5" fill="#5cf2c2"/></g><g class="d3"><circle class="bob" cx="200" cy="124" r="6" fill="#4d6bff"/><circle class="bob2" cx="216" cy="124" r="6" fill="#ff5b6e"/><circle class="bob" style="animation-delay:-1s" cx="232" cy="124" r="6" fill="#5cf2c2"/></g></svg></div><div><h3>UI / UX</h3><p>Interfaces that are clear, characterful and easy to use.</p></div></article>
+        <article class="service"><span class="ic">6</span><div class="art"><svg viewBox="0 0 260 150"><g class="d1"><circle class="fb ping" cx="130" cy="76" r="44" fill="none" stroke="#5cf2c2" stroke-width="1.5"/><circle class="fb ping" style="animation-delay:-1.5s" cx="130" cy="76" r="44" fill="none" stroke="#5cf2c2" stroke-width="1.5"/><g class="orbit"><circle class="st" cx="130" cy="76" r="62" style="stroke-dasharray:3 6"/><circle cx="130" cy="14" r="5" fill="#ff5b6e"/></g></g><g class="d2"><path class="pn" d="M130 26L170 40V78C170 102 152 116 130 126C108 116 90 102 90 78V40Z"/><path class="st draw" pathLength="1" style="stroke:#5cf2c2;stroke-opacity:1;stroke-width:5" d="M112 76l13 13 25-28"/></g></svg></div><div><h3>Care</h3><p>Maintenance, speed tuning, SEO, hosting and support after launch.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playground -->
+  <section id="playground" class="rv">
+    <div class="head"><h2>Take it<br>for a spin.</h2><span class="label">Drive onto each pad to explore our services</span></div>
+    <div class="arena" id="arena">
+      <canvas id="game3d" aria-label="Drivable 3D playground: drive the car onto each service pad"></canvas>
+      <div class="hud" id="hud"><span class="label">Services</span></div>
+      <div class="toast" id="toast"></div>
+      <div class="stick" id="stick" hidden><i></i></div>
+      <div class="speedo" id="speedo" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle class="sp-track" cx="60" cy="60" r="48"/><circle class="sp-val" id="spVal" cx="60" cy="60" r="48"/></svg>
+        <div class="sp-text"><b id="spNum">0</b><span>km/h</span><i id="spGear">N</i></div>
+      </div>
+      <div class="touch" id="touch">
+        <div class="tc">
+          <button type="button" data-key="arrowleft" aria-label="Steer left">◀</button>
+          <button type="button" data-key="arrowright" aria-label="Steer right">▶</button>
+        </div>
+        <div class="tc">
+          <button type="button" class="brake" data-key="arrowdown" aria-label="Brake or reverse">BRAKE</button>
+          <button type="button" class="gas" data-key="arrowup" aria-label="Gas">GAS</button>
+        </div>
+      </div>
+      <div class="tools">
+        <button class="pill tool" id="mute" type="button" aria-label="Mute sound" aria-pressed="false"></button>
+        <button class="pill tool" id="fs" type="button" aria-label="Fullscreen"></button>
+        <button class="pill exit" id="exit" type="button">Exit</button>
+      </div>
+      <button class="start" id="start" type="button">
+        <strong>Click to drive</strong>
+        <span class="label hint-key">Arrow keys / WASD · H to honk · Esc to exit</span>
+        <span class="label hint-touch">Use the on-screen buttons to drive</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="rv">
+    <div class="head"><h2>From brief<br>to live.</h2><span class="label">Six steps, tracked</span></div>
+    <div class="process">
+      <div class="step"><b>01</b><h3>Brief</h3><p>We learn your business, audience and goal.</p></div>
+      <div class="step"><b>02</b><h3>Design</h3><p>Structure, visual direction and responsive layouts.</p></div>
+      <div class="step"><b>03</b><h3>Development</h3><p>Clean code, interactions and integrations.</p></div>
+      <div class="step"><b>04</b><h3>Revision</h3><p>Feedback collected and handled in defined rounds.</p></div>
+      <div class="step"><b>05</b><h3>Final review</h3><p>Speed, content and mobile checks.</p></div>
+      <div class="step"><b>06</b><h3>Launch</h3><p>Go live, handover, and optional ongoing care.</p></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="rv">
+    <div class="about">
+      <h2>Small studio.<br>Serious <span class="grad">craft.</span></h2>
+      <div>
+        <p>Nexo Studio is a full-service web studio. From a sharp landing page to a custom information system, every project starts with a clear purpose.</p>
+        <p>Built for UMKM, growing teams and established businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="rv">
+    <div class="head"><h2>Clear starting<br>points.</h2><span class="label">Pricing and care</span></div>
+    <div class="pricing">
+      <article class="price"><span class="label">Essential</span><h3>Launch</h3><div class="amount">Rp3M+</div><p>A landing page or focused company site. A polished foundation, live.</p></article>
+      <article class="price"><span class="label">Business</span><h3>Grow</h3><div class="amount">Rp6M+</div><p>Multi-page site with richer interactions, integrations and a structure built to convert.</p></article>
+      <article class="price"><span class="label">Systems</span><h3>Custom</h3><div class="amount">Rp10M+</div><p>Web apps, information systems and custom workflows. Priced by scope.</p></article>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="rv">
+    <div class="quote">“A website should not just <span>exist.</span><br>It should make the business <span>clearer.</span>”</div>
+  </section>
+
+  <!-- Start a project -->
+  <section id="contact" class="rv">
+    <div class="head"><h2>Start a<br>project.</h2><span class="label">Project builder</span></div>
+    <div class="builder">
+      <form id="builder">
+        <div class="grid2">
+          <div class="field"><label class="label" for="name">Name</label><input id="name" required placeholder="Your name"></div>
+          <div class="field"><label class="label" for="type">Project type</label>
+            <select id="type"><option>Landing Page</option><option>Company Profile</option><option>E-Commerce</option><option>Web App / Sistem Informasi</option><option>UI / UX Design</option><option>Custom Website</option></select></div>
+          <div class="field"><label class="label" for="budget">Budget</label>
+            <select id="budget"><option>Rp3M — Rp5M</option><option>Rp5M — Rp10M</option><option>Rp10M+</option><option>Not sure yet</option></select></div>
+          <div class="field"><label class="label" for="timeline">Timeline</label>
+            <select id="timeline"><option>As soon as possible</option><option>1 — 2 months</option><option>2 — 3 months</option><option>Flexible</option></select></div>
+          <div class="field full"><label class="label" for="details">What do you need?</label><textarea id="details" placeholder="Tell us about your business, website or system..."></textarea></div>
+        </div>
+        <button class="btn main submit" type="submit">Create project summary</button>
+      </form>
+      <div id="summary"></div>
+      <p class="save-status" id="saveStatus" role="status" aria-live="polite"></p>
+      <div class="saved-projects" id="savedProjects" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><div class="logo">nexo<i>.</i></div><p>Websites built layer by layer.</p></div>
+  <div>© 2026 Nexo Studio, Batam, Indonesia</div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
